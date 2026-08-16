@@ -2,10 +2,11 @@
 
 exec i3lock \
     --nofork \
-    --image="$HOME/dotfiles/Walls/lockscreen.png" \
+    --image="$HOME/dotfiles/Walls/lockscreen-blurred.png" \
     --scale \
     --ignore-empty-password \
     --clock \
+    --blur=15 \
     --indicator \
     --radius=90 \
     --ring-width=7 \
