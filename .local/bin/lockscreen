@@ -1,0 +1,30 @@
+#!/bin/sh
+
+exec i3lock \
+    --nofork \
+    --image="$HOME/dotfiles/Walls/lockscreen.png" \
+    --scale \
+    --ignore-empty-password \
+    --clock \
+    --indicator \
+    --radius=90 \
+    --ring-width=7 \
+    --inside-color=1e1e2ecc \
+    --ring-color=cba6f7ff \
+    --insidever-color=1e1e2ecc \
+    --ringver-color=89b4faff \
+    --insidewrong-color=1e1e2ecc \
+    --ringwrong-color=f38ba8ff \
+    --line-color=00000000 \
+    --keyhl-color=cba6f7ff \
+    --bshl-color=f5c2e7ff \
+    --separator-color=00000000 \
+    --verif-color=cdd6f4ff \
+    --wrong-color=f38ba8ff \
+    --time-color=cdd6f4ff \
+    --date-color=cdd6f4ff \
+    --time-font="JetBrains Mono" \
+    --date-font="JetBrains Mono" \
+    --time-size=28 \
+    --date-size=14 \
+
