@@ -1,0 +1,16 @@
+#!/bin/bash
+
+window=$(xdotool getactivewindow)
+class=$(xprop -id "$window" WM_CLASS | awk -F'"' '{print $4}')
+
+rofi -modi "clipboard:greenclip print" \
+     -show clipboard \
+     -run-command '{cmd}'
+
+xdotool windowactivate "$window"
+
+if [ "$class" = "Alacritty" ]; then
+    xdotool key --clearmodifiers ctrl+shift+v
+else
+    xdotool key --clearmodifiers ctrl+v
+fi
